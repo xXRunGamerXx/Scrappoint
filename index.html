@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scrappoint - Offizielle Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #1a1a1a;
+      color: #e6e6e6;
+    }
+    header {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+    header img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+    header .title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 60px;
+      text-shadow: 0 0 10px black;
+    }
+    header .subtitle {
+      position: absolute;
+      top: calc(50% + 60px);
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 22px;
+      text-shadow: 0 0 10px black;
+    }
+    nav {
+      background: #111;
+      padding: 15px;
+      text-align: center;
+    }
+    nav a {
+      color: #e6e6e6;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ff4f4f;
+    }
+    section {
+      padding: 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      color: #ff4f4f;
+      font-size: 32px;
+      border-bottom: 2px solid #ff4f4f;
+      padding-bottom: 10px;
+    }
+    .server-box {
+      background: #262626;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px black;
+    }
+    .kit-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .kit {
+      background: #262626;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #000;
+      border-left: 4px solid #ff4f4f;
+    }
+    .btn-tebex {
+      background: #ffa500;
+      padding: 12px 20px;
+      border-radius: 8px;
+      display: inline-block;
+      color: black;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+    .btn-tebex:hover {
+      background: #e69500;
+    }
+    footer {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+      color: #888;
+      margin-top: 40px;
+    }
+
+    /* Streamer Section mit Hover Overlay */
+    .streamer-img {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .streamer-img img {
+      width: 100%;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .streamer-img:hover img {
+      transform: scale(1.1);
+    }
+
+    .streamer-img .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 79, 79, 0.7);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 18px;
+      text-decoration: none;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      border-radius: 8px;
+    }
+
+    .streamer-img:hover .overlay {
+      opacity: 1;
+    }
+
+    .streamer-img .overlay a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="images/scrappoint-banner.jpg" alt="Scrappoint Banner">
+  <div class="title">Scrappoint</div>
+  <div class="subtitle">Der deutsche 5× Modded Server – Fair, Stabil & Community‑orientiert</div>
+</header>
+
+<nav>
+  <a href="#info">Server</a>
+  <a href="#kits">Kits</a>
+  <a href="#team">Team</a>
+  <a href="#discord">Discord</a>
+  <a href="#donate">Spenden</a>
+  <a href="#streamer">Streamer</a>
+</nav>
+
+<section id="info">
+  <h2>📌 Server‑Informationen</h2>
+  <div class="server-box">
+    <p><strong>Servername:</strong> Scrappoint 5× Modded</p>
+    <p><strong>Wipe:</strong> Nur Force Wipe</p>
+    <p><strong>Rate:</strong> 5× Ressourcen | 5× Loot</p>
+    <p><strong>Features:</strong> /home | /tpr | /shop | /skinbox | /backpack | /remove</p>
+    <p><strong>IP:</strong> Connect coming soon…</p>
+  </div>
+</section>
+
+<section id="kits">
+  <h2>🎒 Kits</h2>
+  <div class="kit-grid">
+    <div class="kit">
+      <h3>Wood</h3>
+      <p>✔ Fuse<br>✔ Green Card<br>✔ Berrys</p>
+    </div>
+    <div class="kit">
+      <h3>Stone</h3>
+      <p>✔ Jackhammer<br>✔ Chainsaw<br>✔ Hazmat<br>✔ 50 Low Grade</p>
+    </div>
+    <div class="kit">
+      <h3>Metal</h3>
+      <p>✔ SMG<br>✔ Heal<br>✔ Jackhammer<br>✔ Tools</p>
+    </div>
+    <div class="kit">
+      <h3>Iron</h3>
+      <p>✔ Armor<br>✔ Weapons<br>✔ Extra Scrap</p>
+    </div>
+    <div class="kit">
+      <h3>Elite</h3>
+      <p>✔ All Tools<br>✔ Rare Skins<br>✔ Special Items</p>
+    </div>
+    <div class="kit">
+      <h3>VIP</h3>
+      <p>✔ Daily Kit<br>✔ Extra Homes<br>✔ Skinbox Access</p>
+    </div>
+    <div class="kit">
+      <h3>Pro</h3>
+      <p>✔ Faster Smelting<br>✔ Mini Gun Chance<br>✔ HQM Bonus</p>
+    </div>
+    <div class="kit">
+      <h3>Legend</h3>
+      <p>✔ All VIP Benefits<br>✔ Exclusive Items<br>✔ Unique Titles</p>
+    </div>
+  </div>
+</section>
+
+<section id="donate">
+  <h2>💰 Unterstütze Scrappoint</h2>
+  <p>Alle Einnahmen fließen direkt in die Server‑Refinanzierung.</p>
+  <a href="https://scrappoint.tebex.io" target="_blank" class="btn-tebex">Zu Tebex</a>
+</section>
+
+<section id="team">
+  <h2>👑 Team</h2>
+  <div class="server-box">
+    <p><strong>Owner:</strong> xXRunGamerXx / TheTyrone2023</p>
+    <p><strong>Admin:</strong> xXRunGamerXx / TheTyrone2023</p>
+    <p><strong>Support:</strong> xXRunGamerXx / TheTyrone2023</p>
+  </div>
+</section>
+
+<section id="discord">
+  <h2>💬 Discord</h2>
+  <p>Tritt unserer Community bei!</p>
+  <a href="https://discord.gg/mtUvgTVvNN" class="btn-tebex" style="background: #5865F2; color: white;">Discord beitreten</a>
+</section>
+
+<section id="streamer">
+  <h2>🎥 Streamer & Partner</h2>
+  <p>Unterstütze unsere Scrappoint-Streamer und schau live zu!</p>
+  <div class="kit-grid streamer-grid">
+    <div class="kit">
+      <div class="streamer-img">
+        <img src="images/streamer1.jpg" alt="Streamer1">
+        <div class="overlay"><a href="https://www.twitch.tv/xxrungamerxxyt" target="_blank">Live ansehen</a></div>
+      </div>
+      <h3>Streamer1</h3>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 Scrappoint – Alle Einnahmen dienen ausschließlich zur Server‑Refinanzierung.
+</footer>
+
+</body>
+</html>
